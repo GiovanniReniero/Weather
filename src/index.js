@@ -1,4 +1,5 @@
 import _ from 'lodash';
+import './style/style.css';
 import {dealEvent} from "./utilities/dealEvent"
 
 
