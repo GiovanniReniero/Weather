@@ -1,5 +1,9 @@
 import axios from 'axios'
-import {askWhich} from "./askWhich"
+import { askWhich } from "./askWhich"
+
+// const note = (which) => {
+  // return which
+// }
 
 const getCoords =(url) => {
   axios.get(url)
@@ -14,6 +18,9 @@ const getCoords =(url) => {
       Math.round(element.lon) !== Math.round(which[0].lon) &&
       Math.round(element.lat) !== Math.round(which[0].lat)){
         which.push(element)
+        //The above algorythm is poor as it only compares each element to element0.
+        // I could end up having [A, B,B,B,B] as the conditions outlined are satisfied
+        // but not what is required. Needs more attention!
       } 
     }
     askWhich(which)
