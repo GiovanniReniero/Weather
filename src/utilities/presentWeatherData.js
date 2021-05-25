@@ -17,8 +17,8 @@ const presentWeatherData =(weatherData) => {
   let feelsLike = document.createElement("h4")
   let weather = document.createElement("h4")
   let currentTime = document.createElement("h4")
-  temp.innerText= `Temperature: ${weatherData.temp}`
-  feelsLike.innerText= `Feels like: ${weatherData.feels_like}`
+  temp.innerText= `Temperature: ${weatherData.temp} C`
+  feelsLike.innerText= `Feels like: ${weatherData.feels_like} C`
   weather.innerText= `Weather: ${weatherData.weather[0].description}`
   let dateStuff = dateCatcher()
   currentTime.innerText = `Time and date: ${dateStuff}`
