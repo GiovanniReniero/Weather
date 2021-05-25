@@ -13,7 +13,7 @@ function buildBox (locationDetails, which){
     let radioButton = document.createElement("input")
     radioButton.setAttribute("type", "radio")
     radioButton.setAttribute("name", "option")
-    radioButton.setAttribute("value", `${which[i].lon}, ${which[i].lat}`)
+    radioButton.setAttribute("value", `${which[i].lon},${which[i].lat}`)
     let mango = radioButton.getAttribute("value")
     console.log("Son mi", mango)
     let btn = document.createElement("button")

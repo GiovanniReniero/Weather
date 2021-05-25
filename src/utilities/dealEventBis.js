@@ -1,3 +1,4 @@
+import { urlWeatherBuilder } from "./urlWeatherBuilder"
 
 
 const dealEventBis = (event) => {
@@ -9,7 +10,7 @@ const dealEventBis = (event) => {
   for (let radio of dinko) {
     if (radio.checked){
       let values = radio.value.split(",")
-      buildWeatherurl(values)
+      urlWeatherBuilder(values)
     }
   }
 }
